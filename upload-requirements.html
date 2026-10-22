@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><title>Upload Requirements | AICS Demo Portal</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#003dab", "secondary": "#0d50d5", "on-secondary-fixed": "#00174d", "on-primary-container": "#86a8f9", "on-secondary-container": "#fefcff", "surface-container-low": "#f2f3ff", "inverse-on-surface": "#eef0ff", "outline-variant": "#c4c6d3", "surface-bright": "#faf8ff", "secondary-fixed": "#dbe1ff", "tertiary": "#422000", "surface": "#faf8ff", "surface-container-highest": "#dae2fd", "on-tertiary": "#ffffff", "primary-fixed": "#d9e2ff", "primary-fixed-dim": "#b0c6ff", "primary": "#00265f", "surface-container-high": "#e2e7ff", "inverse-primary": "#b0c6ff", "tertiary-fixed-dim": "#ffb77d", "error": "#ba1a1a", "on-background": "#131b2e", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-surface": "#131b2e", "on-tertiary-fixed": "#2f1500", "primary-container": "#0d3b85", "error-container": "#ffdad6", "on-primary-fixed-variant": "#1a438e", "outline": "#747782", "tertiary-container": "#623200", "surface-container": "#eaedff", "secondary-container": "#386bef", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#6e3900", "on-error": "#ffffff", "background": "#faf8ff", "inverse-surface": "#283044", "surface-variant": "#dae2fd", "on-surface-variant": "#434651", "on-primary-fixed": "#001945", "surface-dim": "#d2d9f4", "tertiary-fixed": "#ffdcc3", "surface-container-lowest": "#ffffff", "surface-tint": "#385ca7", "secondary-fixed-dim": "#b5c4ff", "on-tertiary-container": "#f99028" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "1rem", "space-md": "1rem", "margin": "2rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-xl": "2rem", "margin-mobile": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "caption": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "title-md": ["Inter"], "headline-md": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"] }, "fontSize": { "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "caption": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary text-caption font-caption h-8 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><span>GOVPH | Republic of the Philippines</span><span class="text-surface-variant/40">|</span><span>Official Social Welfare Portal</span></div><div class="flex items-center gap-space-lg"><span>Philippine Standard Time (PST): GMT+8</span><div class="flex items-center gap-space-xs"><button class="hover:text-primary-fixed" type="button">A-</button><button class="hover:text-primary-fixed" type="button">A+</button></div></div></div><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="AICS-Official-Logo-Icon.png-1-934x1024.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3M_T34WtbAJ8E67ymgB3SuCGuwvOA0HtsaRH_L3LJV8LKttteLjuOd59V1dC22mVrTylIT7iT36qn_g7an1_C-zdSigcVpJ4ARy4mNDJz_35cA6nc5UKk7pAJK_QHOpVay1Bh2oEiwEk62q5qypLcrv1p2_AZjFBM76e-1MjJer69Nbw-TQnp4mFy2F4Ei4VTLNMLRlPbbDhSGhOTUH3qYc8CfNJu0jiZPvQMz0JYxASFvNITjbJnx59KrxZxizKXksbiiY8"/><div class="flex flex-col"><span class="text-title-md font-title-md text-primary">AICS Online Assistance Portal</span><span class="text-caption font-caption text-on-surface-variant">Department of Social Welfare and Development | Republic of the Philippines</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs text-label-sm font-label-sm bg-surface-container-low text-primary px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-secondary">support_agent</span><span>DSWD Agency Hotline: <strong>16545</strong></span></div><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors rounded-lg" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error text-[10px] font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="text-label-sm font-label-sm text-on-surface">Demo Applicant</span><span class="text-caption font-caption text-on-surface-variant">Ref: AICS-2025-NCR-04821</span></div><a class="ml-space-xs text-caption font-caption text-error hover:underline flex items-center gap-space-xs" data-path="client-portal-logout" href="index.html"><span class="material-symbols-outlined text-[16px]">logout</span><span>Logout</span></a></div></div></div><div class="bg-surface-container-low px-margin py-space-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md flex-wrap"><div class="flex items-center gap-space-xs"><span class="text-caption font-caption uppercase tracking-wider text-on-surface-variant">Case Ref:</span><span class="text-label-md font-label-md text-primary font-bold">AICS-2025-NCR-04821</span></div><span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container text-label-sm font-label-sm"><span class="material-symbols-outlined text-[14px]">pending_actions</span><span>Requirements Incomplete</span></span><span class="text-caption font-caption text-on-surface-variant hidden md:inline">Field Office: NCR Crisis Intervention Unit (CIU)</span></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs text-caption font-caption text-on-surface-variant"><span class="flex items-center text-secondary font-bold gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span>1. Application</span><span class="text-outline-variant">›</span><span class="flex items-center text-primary font-bold gap-1"><span class="material-symbols-outlined text-[16px]">radio_button_checked</span>2. Requirements</span><span class="text-outline-variant">›</span><span class="text-outline">3. Verification</span><span class="text-outline-variant">›</span><span class="text-outline">4. Assessment</span><span class="text-outline-variant">›</span><span class="text-outline">5. Interview</span><span class="text-outline-variant">›</span><span class="text-outline">6. Payout</span><span class="text-outline-variant">›</span><span class="text-outline">7. Feedback</span></div><a class="inline-flex items-center gap-1 text-label-sm font-label-sm text-on-error bg-error hover:bg-on-error-container px-space-md py-1 rounded transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">call</span><span>Crisis Hotline</span></a></div></div></header><aside class="fixed left-0 top-36 h-[calc(100vh-9rem)] w-72 bg-surface-container-lowest z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-md flex-1 overflow-y-auto"><div class="px-space-sm pb-space-sm mb-space-xs"><span class="text-caption font-caption uppercase tracking-wider text-on-surface-variant font-semibold">Services Navigation</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="client-dashboard" href="index.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Client Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="apply-for-assistance" href="apply.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">post_add</span><span>Apply for Assistance</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="upload-requirements" href="upload-requirements.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">cloud_upload</span><span>Upload Requirements</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="verification" href="verification.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">verified</span><span>Verification</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="assessment-and-schedule" href="assessment-schedule.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Assessment & Schedule</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="application-status" href="application-status.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">hourglass_top</span><span>Application Status</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="notifications" href="notifications.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Notifications</span></div><span class="px-1.5 py-0.2 bg-error text-on-error text-caption font-caption rounded-full font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="feedback" href="feedback.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">rate_review</span><span>Feedback</span></div></a></nav></div><div class="px-space-md pt-space-sm bg-surface-container-low rounded mx-space-md p-space-sm"><div class="flex items-center gap-space-xs text-primary font-bold text-caption font-caption mb-1"><span class="material-symbols-outlined text-[16px]">lock</span><span>Data Privacy Secured</span></div><p class="text-caption font-caption text-on-surface-variant">All filings are strictly confidential under RA 10173.</p></div></aside><div class="pl-72"><main class="w-full pt-36 px-gutter pb-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Notification / Top Breadcrumb Context -->
+<div class="flex flex-col gap-space-lg max-w-7xl mx-auto w-full">
+<!-- Title & Context Block -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">medical_services</span>
+<span>Category: Medical Assistance (Hospitalization & Chemotherapy)</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Upload Documentary Requirements</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-3xl">
+          Upload the documents required for your selected assistance category. All files are encrypted under Republic Act 10173. You must complete all applicable requirements before proceeding to verification.
+        </p>
+</div>
+<!-- Quick Document Vault Info Badge -->
+<div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary">DSWD Secure Ingestion</span>
+<span class="font-caption text-caption text-on-surface-variant">Max 10MB/doc • PDF, PNG, JPG</span>
+</div>
+</div>
+</div>
+<!-- Prominent Reference & Progress Tracker Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex flex-col">
+<span class="font-caption text-caption uppercase text-on-surface-variant font-semibold tracking-wider">Application Reference</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">AICS-2025-NCR-04821</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="font-caption text-caption uppercase text-on-surface-variant font-semibold tracking-wider">Compliance Status</span>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span>Incomplete (3 of 5 Uploaded)</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Completion Indicator Widget -->
+<div class="flex items-center gap-space-md min-w-[260px]">
+<div class="w-full flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">Progress</span>
+<span class="text-secondary font-bold">60% Complete</span>
+</div>
+<!-- Progress Bar Track -->
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500 ease-out" style="width: 60%"></div>
+</div>
+</div>
+<div class="flex-shrink-0 w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center font-label-md text-label-md text-primary font-bold">
+            3/5
+          </div>
+</div>
+</div>
+<!-- Warning Callout Strip -->
+<div class="bg-error-container/40 p-space-md rounded-lg flex items-start gap-space-md">
+<span class="material-symbols-outlined text-error text-[22px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">error</span>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-error-container font-bold">Action Needed: 2 Pending Documents</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            The <strong>"Submit Requirements for Verification"</strong> button will automatically unlock once you re-upload a clear Clinical Abstract and provide the Hospital Statement of Account (SOA).
+          </p>
+</div>
+</div>
+</div>
+<!-- Main Workspace Grid (Left Cards / Right Summary & Assist) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Primary Checklist Column -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Checklist Section Header -->
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-title-md text-title-md text-primary font-bold flex items-center gap-2">
+<span>Mandatory Requirements Checklist</span>
+<span class="font-caption text-caption bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full font-normal">Standard CIU Medical Packet</span>
+</span>
+<span class="font-caption text-caption text-on-surface-variant">Required by DSWD MC No. 16 s. 2023</span>
+</div>
+<!-- Document 1: Government-Issued ID -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-shadow hover:shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">1. Valid Government-Issued ID (Applicant/Beneficiary)</h2>
+<span class="text-error font-bold text-label-md font-label-md">*</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  PhilSys National ID, UMID, Driver's License, Voter's ID, or Barangay ID with photo & signature.
+                </p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm whitespace-nowrap self-start">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Accepted / Uploaded</span>
+</span>
+</div>
+<!-- Document Metadata Bar -->
+<div class="mt-space-md bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[26px]">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">philsys_national_id_front_back.pdf</span>
+<span class="font-caption text-caption text-on-surface-variant">2.4 MB • Uploaded Oct 14, 2025, 10:15 AM PST</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<button class="px-space-sm py-1 rounded text-label-sm font-label-sm text-secondary hover:bg-surface-container transition-colors flex items-center gap-1" title="View Document" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Preview</span>
+</button>
+<button class="px-space-sm py-1 rounded text-label-sm font-label-sm text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1" title="Upload new version" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Replace</span>
+</button>
+<button class="p-1 rounded text-label-sm font-label-sm text-error hover:bg-error-container/40 transition-colors" title="Delete file" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Document 2: Barangay Certificate of Indigency -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-shadow hover:shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">home_work</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">2. Barangay Certificate of Indigency</h2>
+<span class="text-error font-bold text-label-md font-label-md">*</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Issued within the last 3 months stating applicant is a bona fide resident in need of medical assistance.
+                </p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm whitespace-nowrap self-start">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Uploaded (Pending Review)</span>
+</span>
+</div>
+<div class="mt-space-md bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[26px]">image</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">brgy_certificate_indigency_signed.jpg</span>
+<span class="font-caption text-caption text-on-surface-variant">1.8 MB • Uploaded Oct 14, 2025, 10:20 AM PST</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<button class="px-space-sm py-1 rounded text-label-sm font-label-sm text-secondary hover:bg-surface-container transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Preview</span>
+</button>
+<button class="px-space-sm py-1 rounded text-label-sm font-label-sm text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Replace</span>
+</button>
+<button class="p-1 rounded text-label-sm font-label-sm text-error hover:bg-error-container/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Document 3: Clinical Abstract / Medical Certificate (ACTION REQUIRED) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border-l-4 border-error">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_hospital</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">3. Clinical Abstract / Medical Certificate</h2>
+<span class="text-error font-bold text-label-md font-label-md">*</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Signed by attending physician with professional PRC license number issued within 3 months.
+                </p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error text-on-error font-label-sm text-label-sm whitespace-nowrap self-start shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">error</span>
+<span>Needs Correction</span>
+</span>
+</div>
+<!-- Auditor Rejection Feedback Callout -->
+<div class="mt-space-md bg-error-container/60 p-space-md rounded-lg flex items-start gap-space-md">
+<span class="material-symbols-outlined text-error text-[20px] flex-shrink-0 mt-0.5">feedback</span>
+<div class="flex-1">
+<span class="font-label-sm text-label-sm text-on-error-container uppercase font-bold tracking-wide">CIU Verifier Remark:</span>
+<p class="font-body-sm text-body-sm text-on-error-container mt-0.5">
+                "The submitted photo is blurry and the physician's license number is unreadable. Please upload a clear photo or scanned PDF."
+              </p>
+</div>
+</div>
+<!-- Re-upload Drag and Drop Area -->
+<div class="mt-space-md bg-surface-container-low rounded-xl p-space-lg flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-colors group">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary mb-space-xs group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<p class="font-label-md text-label-md text-primary font-bold">Drag & drop new Clinical Abstract here, or</p>
+<div class="mt-space-sm flex items-center gap-space-sm">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-space-md py-2 rounded-lg hover:bg-primary-container transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+<span>Browse File</span>
+</button>
+<button class="bg-surface-container-highest text-primary font-label-sm text-label-sm px-space-md py-2 rounded-lg hover:bg-surface-container transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Take Photo</span>
+</button>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-space-sm">Supported formats: PDF, JPG, PNG (Maximum 10 MB per document)</span>
+</div>
+</div>
+<!-- Document 4: Hospital Statement of Account (SOA) (NOT UPLOADED) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">4. Hospital Statement of Account (SOA) or Prescription</h2>
+<span class="text-error font-bold text-label-md font-label-md">*</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Itemized billing statement signed by billing officer or licensed pharmacy prescription/quotation.
+                </p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm whitespace-nowrap self-start">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span>Not Uploaded</span>
+</span>
+</div>
+<!-- Empty Drag & Drop Upload Zone -->
+<div class="mt-space-md bg-surface-container-low rounded-xl p-space-xl flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[28px]">upload_file</span>
+</div>
+<p class="font-label-md text-label-md text-primary font-bold">Drag & drop Hospital SOA or Pharmacy Quotation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Direct upload from mobile gallery, scanner or camera</p>
+<div class="mt-space-md flex flex-wrap justify-center items-center gap-space-sm">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-space-md py-2 rounded-lg hover:bg-primary-container transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">file_upload</span>
+<span>Select Document</span>
+</button>
+</div>
+<span class="font-caption text-caption text-outline mt-space-sm">Accepted: PDF, JPG, PNG up to 10MB</span>
+</div>
+</div>
+<!-- Document 5: Proof of Relationship -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">diversity_1</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">5. Proof of Relationship (Family Representative)</h2>
+<span class="font-caption text-caption bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Applicable for representatives</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  PSA Birth Certificate, Marriage Contract, or Barangay Certification of Relationship.
+                </p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm whitespace-nowrap self-start">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Uploaded (Pending Review)</span>
+</span>
+</div>
+<div class="mt-space-md bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[26px]">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">psa_birth_certificate_beneficiary.pdf</span>
+<span class="font-caption text-caption text-on-surface-variant">3.1 MB • Uploaded Oct 14, 2025, 10:25 AM PST</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<button class="px-space-sm py-1 rounded text-label-sm font-label-sm text-secondary hover:bg-surface-container transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Preview</span>
+</button>
+<button class="px-space-sm py-1 rounded text-label-sm font-label-sm text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Replace</span>
+</button>
+<button class="p-1 rounded text-label-sm font-label-sm text-error hover:bg-error-container/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Verification Guide, Citizen Tips & Action Box -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Submission Action Terminal -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low -mx-space-lg -mt-space-lg p-space-lg rounded-t-xl">
+<div class="flex flex-col">
+<span class="font-caption text-caption uppercase text-on-surface-variant font-bold">Document Audit</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">3 of 5 Complete</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">fact_check</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Valid ID:</span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> Verified
+              </span>
+</div>
+<div class="flex items-center justify-between">
+<span>Brgy Indigency:</span>
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done</span> In Review
+              </span>
+</div>
+<div class="flex items-center justify-between">
+<span>Clinical Abstract:</span>
+<span class="text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">close</span> Blurry
+              </span>
+</div>
+<div class="flex items-center justify-between">
+<span>Hospital SOA:</span>
+<span class="text-tertiary-container font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">hourglass_empty</span> Missing
+              </span>
+</div>
+<div class="flex items-center justify-between">
+<span>Proof of Relationship:</span>
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done</span> In Review
+              </span>
+</div>
+</div>
+<!-- Submission Controls -->
+<div class="pt-space-sm flex flex-col gap-space-sm">
+<div class="relative group">
+<!-- Disabled Button with WCAG compliant tone -->
+<button class="w-full bg-outline-variant/60 text-outline cursor-not-allowed font-label-md text-label-md py-3.5 px-space-md rounded-lg flex items-center justify-center gap-2 font-bold shadow-none" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Submit Requirements for Verification</span>
+</button>
+<!-- Helpful Context Tooltip for Disabled Action -->
+<div class="hidden group-hover:block absolute bottom-full mb-2 left-1/2 -translate-x-1/2 w-64 p-space-sm bg-inverse-surface text-inverse-on-surface font-caption text-caption rounded shadow-lg text-center z-20">
+                You must resolve the 2 remaining documents (Clinical Abstract & Hospital SOA) before submitting to CIU officers.
+              </div>
+</div>
+<button class="w-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md py-2.5 px-space-md rounded-lg flex items-center justify-center gap-2 font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Progress & Continue Later</span>
+</button>
+</div>
+<div class="text-center">
+<span class="font-caption text-caption text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span>Auto-saved 2 minutes ago</span>
+</span>
+</div>
+</div>
+<!-- Tips for Quick Approval (Guidance Box) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-secondary text-[24px]">lightbulb</span>
+<h3 class="font-title-md text-title-md font-bold">Tips for Quick Approval</h3>
+</div>
+<ul class="flex flex-col gap-space-md font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-bold text-caption text-primary flex-shrink-0 mt-0.5">1</div>
+<p><strong class="text-on-surface">Corners & Lighting:</strong> Ensure all four corners of the physical document are in frame, free of shadows or reflective flash glare.</p>
+</li>
+<li class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-bold text-caption text-primary flex-shrink-0 mt-0.5">2</div>
+<p><strong class="text-on-surface">Doctor's License & Seals:</strong> The physician's PRC license number and official hospital dry seal/stamp must be sharp and legible.</p>
+</li>
+<li class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-bold text-caption text-primary flex-shrink-0 mt-0.5">3</div>
+<p><strong class="text-on-surface">Multi-page Billing:</strong> PDF format is strongly recommended for itemized hospital bills with more than 2 pages to prevent missing sheets.</p>
+</li>
+</ul>
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">contact_support</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Need assistance scanning?</span>
+<span class="font-caption text-caption text-on-surface-variant">Visit your local DSWD CIU Satellite kiosk for free document scanning.</span>
+</div>
+</div>
+</div>
+<!-- Photo Documentation Quality Sample Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">Example: Document Quality Check</span>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Bad Example -->
+<div class="flex flex-col gap-1">
+<div class="relative rounded-lg overflow-hidden h-28 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A smartphone photograph of a blurry government document taken at an extreme angle in poor lighting with heavy flash glare obscuring the text and seal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIz1aEI-ujx-7QjZjG1_lOobxlgbmIrnfkOH4vfDCIWegG73gj4EFa4KNPbbCdLPbtabDMYcnUPUjn2wPEAwW6NOFixEKgIHxrMA54dlWxWQKjOxnsMwPkMi-KyOML-GMvI_qUFzZ8b5FhE5WNvqodNzDLiZRKNosfwMuC7Rj14vbpUEHoM1RHK97SwrQRd2BtJYdJrcRKKa3f1c6rCpf_sZATX-d3XiaVY9z1zDcYDEvFkw1XuAQ"/>
+<div class="absolute top-1 left-1 bg-error text-on-error text-[10px] font-bold px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">cancel</span>
+<span>Blurry / Cut</span>
+</div>
+</div>
+<span class="font-caption text-caption text-error font-semibold">Avoid Glare & Blur</span>
+</div>
+<!-- Good Example -->
+<div class="flex flex-col gap-1">
+<div class="relative rounded-lg overflow-hidden h-28 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A crisp, high-resolution flat scan of an official medical certificate on a clean neutral background showing all four borders, sharp legible stamps and clear signatures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr0MN3PDSWN1xX6p_cl8jtQHKAJDXgZLd5Xjg4mMu4Hdau51L_jHyBDhVSFC12jYnmE9JqCKuPXWMUDAkDEhjTHm4ATvyjJmBw9U9eskhbsRDBgC_QwMqfzsYXPzZwFKu3LK4DT5TQ4QgNC5LgxfyJWd6mM8g4LwAgw8v1Mct7zML4dZ0rJC_zz2Rfrx3jAnDHI9N2b23kjnI_TYJtiSFfNG8scx_NmVe5dPGl246xJNREFlFHWOE"/>
+<div class="absolute top-1 left-1 bg-secondary text-on-secondary text-[10px] font-bold px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+<span>Clear & Flat</span>
+</div>
+</div>
+<span class="font-caption text-caption text-secondary font-semibold">Complete & Readable</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Official Helpdesk & Anti-Fixer Advisory Bar -->
+<div class="mt-space-lg bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px]">shield</span>
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold">DSWD Anti-Fixer & Free Service Guarantee</span>
+<p class="font-caption text-caption text-on-surface-variant">All AICS evaluation and upload processes are 100% free of charge. Never pay anyone promising immediate social relief payouts.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<a class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-1 font-semibold" href="#">
+<span>Read Citizen's Charter</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic client interaction for interactive dropzones and demo feedback
+  document.addEventListener('DOMContentLoaded', () => {
+    // Provide user feedback when file buttons are clicked in this demo state
+    const browseBtns = document.querySelectorAll('button');
+    browseBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const text = btn.innerText.trim();
+        if (text.includes('Browse') || text.includes('Select') || text.includes('Replace')) {
+          console.info('AICS Ingestion: Opening client file selector dialog...');
+        }
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low py-space-xl text-on-surface-variant"><div class="w-full px-gutter flex flex-col md:flex-row justify-between items-start gap-space-lg"><div class="max-w-xl"><div class="flex items-center gap-space-xs mb-space-xs"><span class="text-label-md font-label-md text-primary font-bold">Department of Social Welfare and Development</span><span class="text-caption font-caption text-on-surface-variant">| Bagong Pilipinas</span></div><p class="text-caption font-caption mb-space-sm">DSWD Central Office: Batasan Pambansa Complex, Constitution Hills, Quezon City, Philippines 1126. AICS Online Crisis Intervention and Social Safety Net Portal.</p><p class="text-caption font-caption text-outline">Republic Act No. 10173 (Data Privacy Act of 2012) compliant. Official transactions are free of charge. Report unauthorized fixers immediately to hotline 16545.</p></div><div class="flex flex-col gap-space-xs text-caption font-caption"><span class="text-label-sm font-label-sm text-primary font-bold uppercase">Citizen Resources</span><a class="hover:text-primary transition-colors" href="#">Citizen's Charter 2025</a><a class="hover:text-primary transition-colors" href="#">Accessibility Statement & WCAG AA Compliance</a><a class="hover:text-primary transition-colors" href="#">Terms of Service & Privacy Notice</a><span class="text-outline mt-space-xs">© 2025 Republic of the Philippines. All rights reserved.</span></div></div></footer></div>
+<script>
+(function(){
+ const form=document.querySelector('form');
+ const inputs=Array.from(document.querySelectorAll('input[type="file"]'));
+ if(!inputs.length) return;
+ const msg=document.createElement('div');
+ msg.className='bg-surface-container-high text-on-surface rounded-xl p-space-md mt-space-md';
+ msg.innerHTML='<strong>Prototype mode:</strong> file selection is checked in your browser only; files are not uploaded to a server.';
+ const main=document.querySelector('main');
+ if(main) main.prepend(msg);
+ // Keep original controls, but gate any "continue/submit" button on required file fields.
+ const buttons=Array.from(document.querySelectorAll('button')).filter(b=>/submit requirements|continue|proceed|verify/i.test(b.textContent||''));
+ buttons.forEach(btn=>btn.addEventListener('click',function(ev){
+   const requiredInputs=inputs.filter(i=>i.required);
+   const missing=requiredInputs.filter(i=>!i.files || !i.files.length);
+   if(missing.length){ev.preventDefault();ev.stopImmediatePropagation();alert('Please select every required file before continuing.');return}
+   const app=JSON.parse(localStorage.getItem('aicsDemoApplication')||'{}');
+   app.requirementsComplete=true;app.status='Requirements selected (demo)';
+   localStorage.setItem('aicsDemoApplication',JSON.stringify(app));
+ }));
+})();
+</script>
+</body></html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><title>Client Dashboard | AICS Demo Portal</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#003dab", "secondary": "#0d50d5", "on-secondary-fixed": "#00174d", "on-primary-container": "#86a8f9", "on-secondary-container": "#fefcff", "surface-container-low": "#f2f3ff", "inverse-on-surface": "#eef0ff", "outline-variant": "#c4c6d3", "surface-bright": "#faf8ff", "secondary-fixed": "#dbe1ff", "tertiary": "#422000", "surface": "#faf8ff", "surface-container-highest": "#dae2fd", "on-tertiary": "#ffffff", "primary-fixed": "#d9e2ff", "primary-fixed-dim": "#b0c6ff", "primary": "#00265f", "surface-container-high": "#e2e7ff", "inverse-primary": "#b0c6ff", "tertiary-fixed-dim": "#ffb77d", "error": "#ba1a1a", "on-background": "#131b2e", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-surface": "#131b2e", "on-tertiary-fixed": "#2f1500", "primary-container": "#0d3b85", "error-container": "#ffdad6", "on-primary-fixed-variant": "#1a438e", "outline": "#747782", "tertiary-container": "#623200", "surface-container": "#eaedff", "secondary-container": "#386bef", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#6e3900", "on-error": "#ffffff", "background": "#faf8ff", "inverse-surface": "#283044", "surface-variant": "#dae2fd", "on-surface-variant": "#434651", "on-primary-fixed": "#001945", "surface-dim": "#d2d9f4", "tertiary-fixed": "#ffdcc3", "surface-container-lowest": "#ffffff", "surface-tint": "#385ca7", "secondary-fixed-dim": "#b5c4ff", "on-tertiary-container": "#f99028" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-mobile": "1rem", "space-md": "1rem", "margin": "2rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-xl": "2rem", "margin-mobile": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "caption": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "title-md": ["Inter"], "headline-md": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"] }, "fontSize": { "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "caption": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary text-caption font-caption h-8 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><span>GOVPH | Republic of the Philippines</span><span class="text-surface-variant/40">|</span><span>Official Social Welfare Portal</span></div><div class="flex items-center gap-space-lg"><span>Philippine Standard Time (PST): GMT+8</span><div class="flex items-center gap-space-xs"><button class="hover:text-primary-fixed" type="button">A-</button><button class="hover:text-primary-fixed" type="button">A+</button></div></div></div><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="AICS-Official-Logo-Icon.png-1-934x1024.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3M_T34WtbAJ8E67ymgB3SuCGuwvOA0HtsaRH_L3LJV8LKttteLjuOd59V1dC22mVrTylIT7iT36qn_g7an1_C-zdSigcVpJ4ARy4mNDJz_35cA6nc5UKk7pAJK_QHOpVay1Bh2oEiwEk62q5qypLcrv1p2_AZjFBM76e-1MjJer69Nbw-TQnp4mFy2F4Ei4VTLNMLRlPbbDhSGhOTUH3qYc8CfNJu0jiZPvQMz0JYxASFvNITjbJnx59KrxZxizKXksbiiY8"/><div class="flex flex-col"><span class="text-title-md font-title-md text-primary">AICS Online Assistance Portal</span><span class="text-caption font-caption text-on-surface-variant">Department of Social Welfare and Development | Republic of the Philippines</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs text-label-sm font-label-sm bg-surface-container-low text-primary px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-secondary">support_agent</span><span>DSWD Agency Hotline: <strong>16545</strong></span></div><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors rounded-lg" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error text-[10px] font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="text-label-sm font-label-sm text-on-surface">Demo Applicant</span><span class="text-caption font-caption text-on-surface-variant">Ref: AICS-2025-NCR-04821</span></div><a class="ml-space-xs text-caption font-caption text-error hover:underline flex items-center gap-space-xs" data-path="client-portal-logout" href="index.html"><span class="material-symbols-outlined text-[16px]">logout</span><span>Logout</span></a></div></div></div><div class="bg-surface-container-low px-margin py-space-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md flex-wrap"><div class="flex items-center gap-space-xs"><span class="text-caption font-caption uppercase tracking-wider text-on-surface-variant">Case Ref:</span><span class="text-label-md font-label-md text-primary font-bold">AICS-2025-NCR-04821</span></div><span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container text-label-sm font-label-sm"><span class="material-symbols-outlined text-[14px]">pending_actions</span><span>Requirements Incomplete</span></span><span class="text-caption font-caption text-on-surface-variant hidden md:inline">Field Office: NCR Crisis Intervention Unit (CIU)</span></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs text-caption font-caption text-on-surface-variant"><span class="flex items-center text-secondary font-bold gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span>1. Application</span><span class="text-outline-variant">›</span><span class="flex items-center text-primary font-bold gap-1"><span class="material-symbols-outlined text-[16px]">radio_button_checked</span>2. Requirements</span><span class="text-outline-variant">›</span><span class="text-outline">3. Verification</span><span class="text-outline-variant">›</span><span class="text-outline">4. Assessment</span><span class="text-outline-variant">›</span><span class="text-outline">5. Interview</span><span class="text-outline-variant">›</span><span class="text-outline">6. Payout</span><span class="text-outline-variant">›</span><span class="text-outline">7. Feedback</span></div><a class="inline-flex items-center gap-1 text-label-sm font-label-sm text-on-error bg-error hover:bg-on-error-container px-space-md py-1 rounded transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">call</span><span>Crisis Hotline</span></a></div></div></header><aside class="fixed left-0 top-36 h-[calc(100vh-9rem)] w-72 bg-surface-container-lowest z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-md flex-1 overflow-y-auto"><div class="px-space-sm pb-space-sm mb-space-xs"><span class="text-caption font-caption uppercase tracking-wider text-on-surface-variant font-semibold">Services Navigation</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="client-dashboard" href="index.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Client Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="apply-for-assistance" href="apply.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">post_add</span><span>Apply for Assistance</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="upload-requirements" href="upload-requirements.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">cloud_upload</span><span>Upload Requirements</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="verification" href="verification.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">verified</span><span>Verification</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="assessment-and-schedule" href="assessment-schedule.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Assessment & Schedule</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="application-status" href="application-status.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">hourglass_top</span><span>Application Status</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="notifications" href="notifications.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Notifications</span></div><span class="px-1.5 py-0.2 bg-error text-on-error text-caption font-caption rounded-full font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="feedback" href="feedback.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">rate_review</span><span>Feedback</span></div></a></nav></div><div class="px-space-md pt-space-sm bg-surface-container-low rounded mx-space-md p-space-sm"><div class="flex items-center gap-space-xs text-primary font-bold text-caption font-caption mb-1"><span class="material-symbols-outlined text-[16px]">lock</span><span>Data Privacy Secured</span></div><p class="text-caption font-caption text-on-surface-variant">All filings are strictly confidential under RA 10173.</p></div></aside><div class="pl-72"><main class="w-full pt-36 px-gutter pb-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Greeting & Orientation -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">waving_hand</span>
+<span class="text-label-md font-label-md uppercase tracking-wider font-bold">Maligayang Pagdating</span>
+</div>
+<h1 class="text-headline-xl font-headline-xl text-primary tracking-tight">Magandang araw, Demo Applicant!</h1>
+<p class="text-body-md font-body-md text-on-surface-variant mt-1">
+        Welcome to your official DSWD AICS assistance account. Track, submit requirements, and manage your ongoing social safety aid.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="text-caption font-caption text-on-surface-variant flex items-center gap-1 bg-surface-container px-space-md py-1.5 rounded-full">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        Portal Operational | Central Luzon & NCR Sync Active
+      </span>
+<button class="px-space-md py-1.5 bg-surface-container-low hover:bg-surface-container text-primary text-label-sm font-label-sm rounded-lg flex items-center gap-1 shadow-sm transition-all" onclick="window.print()" title="Print case summary">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Summary</span>
+</button>
+</div>
+</div>
+<!-- Primary Active Application Hero Card (Elevation 1) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg mb-space-xl relative overflow-hidden">
+<!-- Accent subtle top bar -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-secondary to-tertiary-container"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">health_and_safety</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="text-caption font-caption uppercase tracking-wider text-on-surface-variant font-semibold">Active Crisis Case</span>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1 bg-surface-container-high px-space-sm py-0.5 rounded">
+<span class="text-label-md font-label-md text-primary font-mono tracking-tight" id="refNumber">AICS-2025-NCR-04821</span>
+<button class="text-primary hover:text-secondary p-0.5" onclick="navigator.clipboard.writeText('AICS-2025-NCR-04821'); document.getElementById('copyHint').classList.remove('opacity-0'); setTimeout(() => document.getElementById('copyHint').classList.add('opacity-0'), 2000)" title="Copy Case Reference">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<span class="text-[10px] font-bold text-secondary opacity-0 transition-opacity" id="copyHint">KOPYADO!</span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-primary mt-0.5">Medical Assistance (Hospitalization & Chemotherapy Support)</h2>
+</div>
+</div>
+<div class="flex flex-col items-start lg:items-end gap-1">
+<span class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[16px] animate-bounce">warning</span>
+          Action Required: Upload Missing Requirements
+        </span>
+<span class="text-caption font-caption text-on-surface-variant">Target Validation SLA: within 48 Hours upon complete upload</span>
+</div>
+</div>
+<!-- Case Meta Details Bar -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-low rounded-lg mt-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">calendar_today</span>
+<div>
+<p class="text-caption font-caption text-on-surface-variant uppercase font-medium">Date & Time Filed</p>
+<p class="text-label-md font-label-md text-on-surface font-semibold">October 14, 2025 • 09:30 AM PST</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">apartment</span>
+<div>
+<p class="text-caption font-caption text-on-surface-variant uppercase font-medium">Preferred CIU Processing Office</p>
+<p class="text-label-md font-label-md text-on-surface font-semibold">DSWD NCR Satellite Office - Gastambide, Manila</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">assignment_ind</span>
+<div>
+<p class="text-caption font-caption text-on-surface-variant uppercase font-medium">Registered Beneficiary</p>
+<p class="text-label-md font-label-md text-on-surface font-semibold">Demo Ramos Sample (Self)</p>
+</div>
+</div>
+</div>
+<!-- Multi-Stage Application Tracker -->
+<div class="mt-space-lg pt-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="text-label-md font-label-md text-primary font-bold">Stage 2 of 7: Requirements Submission</span>
+<span class="text-caption font-caption text-on-surface-variant ml-2">(3 of 5 Mandatory Documents Submitted)</span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary font-bold">60% Complete</span>
+</div>
+<!-- Segmented Bar -->
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full w-[60%] transition-all duration-700"></div>
+<div class="bg-tertiary-fixed-dim h-full w-[10%] animate-pulse"></div>
+</div>
+<!-- Milestones mini-pills -->
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-space-xs mt-space-sm text-center">
+<div class="p-1 rounded bg-surface-container-high text-primary flex items-center justify-center gap-1 text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> 1. Application
+        </div>
+<div class="p-1 rounded bg-secondary text-on-secondary flex items-center justify-center gap-1 text-[11px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">edit_document</span> 2. Requirements
+        </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant flex items-center justify-center gap-1 text-[11px]">
+          3. Verification
+        </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant flex items-center justify-center gap-1 text-[11px]">
+          4. Assessment
+        </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant flex items-center justify-center gap-1 text-[11px]">
+          5. Interview
+        </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant flex items-center justify-center gap-1 text-[11px]">
+          6. Payout
+        </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant flex items-center justify-center gap-1 text-[11px]">
+          7. Feedback
+        </div>
+</div>
+</div>
+<!-- Immediate Action Alert Callout -->
+<div class="mt-space-lg p-space-md rounded-xl bg-error-container text-on-error-container flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="p-2 rounded-lg bg-on-error text-error shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">pending_actions</span>
+</div>
+<div>
+<h3 class="text-title-md font-title-md font-bold text-on-error-container">Critical Action Needed</h3>
+<p class="text-body-sm font-body-sm text-on-error-container/90 mt-0.5">
+            Your <strong>Medical Certificate / Clinical Summary</strong> (valid within 3 months) and <strong>Barangay Certificate of Indigency</strong> require upload before a Social Welfare Officer can verify your folder.
+          </p>
+</div>
+</div>
+<a class="shrink-0 w-full md:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 bg-primary text-on-primary hover:bg-primary-container text-label-md font-label-md rounded-lg shadow-md transition-all" data-path="upload-requirements" href="upload-requirements.html">
+<span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+<span>Upload Missing Documents Now</span>
+</a>
+</div>
+</section>
+<!-- Quick Action & Operational Status Cards Grid (4 Columns) -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- 1. Upload Requirements -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error text-[11px] font-bold">2 Pending</span>
+</div>
+<h3 class="text-title-md font-title-md text-primary">Upload Requirements</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+          Barangay Indigency and Updated Clinical Abstract require submission.
+        </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="text-caption font-caption text-on-surface font-semibold">Accepted: PDF, JPG (max 10MB)</span>
+<a class="text-secondary hover:text-on-secondary-fixed-variant text-label-sm font-label-sm font-bold flex items-center gap-0.5" data-path="upload-requirements" href="upload-requirements.html">
+          Submit <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 2. Track Application Status -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">troubleshoot</span>
+</div>
+<span class="text-caption font-caption text-on-surface-variant">Updated 2h ago</span>
+</div>
+<h3 class="text-title-md font-title-md text-primary">Track Status Logs</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+          Real-time intake tracking with official DSWD crisis assessor logs.
+        </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="text-caption font-caption text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> CIU Intake Log #482
+        </span>
+<a class="text-primary hover:text-secondary text-label-sm font-label-sm font-bold flex items-center gap-0.5" data-path="application-status" href="application-status.html">
+          View Logs <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 3. Appointment & Schedule -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between opacity-90">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">lock_clock</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold">Locked</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface">Assessor Interview</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+          Interview scheduling unlocks automatically once requirement verification passes.
+        </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="text-caption font-caption text-outline font-medium">Status: Awaiting Verification</span>
+<span class="material-symbols-outlined text-outline text-[18px]">lock</span>
+</div>
+</div>
+<!-- 4. Crisis Hotlines & Support -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">phone_in_talk</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container text-[11px] font-bold">24/7 Desk</span>
+</div>
+<h3 class="text-title-md font-title-md text-primary">Crisis Hotlines</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+          Immediate intervention support for critical medical or burial cases.
+        </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-error font-bold tracking-tight">(02) 8951-8110</span>
+<a class="text-error hover:underline text-label-sm font-label-sm font-bold flex items-center gap-0.5" href="tel:16545">
+          Call 16545 <span class="material-symbols-outlined text-[16px]">call</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Two Column Layout: Activity & Alerts -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Left Column: Detailed Document Status & Timeline (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Document Submission Status Checklist Card -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">fact_check</span>
+<h3 class="text-title-md font-title-md text-primary">Requirements Checklist for Medical Aid</h3>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-medium">3 of 5 Received</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Doc 1: Valid Government ID (Completed) -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+<div>
+<p class="text-label-md font-label-md text-on-surface font-semibold">Valid Philippine Identification Card</p>
+<p class="text-caption font-caption text-on-surface-variant">Philippine Postal ID • Scanned on Oct 14, 2025</p>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-space-sm py-0.5 rounded bg-surface-container-high text-primary font-bold">Uploaded</span>
+</div>
+<!-- Doc 2: Hospital Bill / Quotation (Completed) -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+<div>
+<p class="text-label-md font-label-md text-on-surface font-semibold">Hospital Billing Statement / Quotation</p>
+<p class="text-caption font-caption text-on-surface-variant">Philippine General Hospital • Billing #89218 • ₱48,500.00</p>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-space-sm py-0.5 rounded bg-surface-container-high text-primary font-bold">Uploaded</span>
+</div>
+<!-- Doc 3: Prescription / Protocol (Completed) -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+<div>
+<p class="text-label-md font-label-md text-on-surface font-semibold">Doctor Prescription & Chemo Protocol</p>
+<p class="text-caption font-caption text-on-surface-variant">Signed by Attending Oncologist with Lic. No. 0084721</p>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-space-sm py-0.5 rounded bg-surface-container-high text-primary font-bold">Uploaded</span>
+</div>
+<!-- Doc 4: Medical Certificate (Missing) -->
+<div class="flex items-center justify-between p-space-sm bg-error-container/40 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[22px]">error</span>
+<div>
+<p class="text-label-md font-label-md text-error font-bold">Medical Certificate / Clinical Summary</p>
+<p class="text-caption font-caption text-on-error-container">Must state official diagnosis, issued within the last 90 days</p>
+</div>
+</div>
+<a class="px-space-md py-1 bg-error text-on-error text-label-sm font-label-sm rounded font-bold hover:bg-on-error-container transition-colors flex items-center gap-1" data-path="upload-requirements" href="upload-requirements.html">
+<span class="material-symbols-outlined text-[16px]">upload</span> Upload
+            </a>
+</div>
+<!-- Doc 5: Indigency Certificate (Missing) -->
+<div class="flex items-center justify-between p-space-sm bg-error-container/40 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[22px]">error</span>
+<div>
+<p class="text-label-md font-label-md text-error font-bold">Barangay Certificate of Indigency</p>
+<p class="text-caption font-caption text-on-error-container">Issued under the name of Demo Applicant for DSWD Assistance purpose</p>
+</div>
+</div>
+<a class="px-space-md py-1 bg-error text-on-error text-label-sm font-label-sm rounded font-bold hover:bg-on-error-container transition-colors flex items-center gap-1" data-path="upload-requirements" href="upload-requirements.html">
+<span class="material-symbols-outlined text-[16px]">upload</span> Upload
+            </a>
+</div>
+</div>
+</section>
+<!-- Application Live Activity Log Snippet -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">history</span>
+<h3 class="text-title-md font-title-md text-primary">Case Progression Timeline</h3>
+</div>
+<a class="text-secondary text-label-sm font-label-sm hover:underline font-bold" data-path="application-status" href="application-status.html">Full Audit Trail</a>
+</div>
+<ol class="relative pl-6 space-y-space-md before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Item 1 -->
+<li class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[11px] shadow-sm">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<div class="w-full bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary font-bold">Online Application Initiated</span>
+<span class="text-caption font-caption text-on-surface-variant">Oct 14, 2025 • 09:30 AM</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+                Application form filled and reference code <span class="font-mono text-primary font-bold">AICS-2025-NCR-04821</span> generated automatically.
+              </p>
+</div>
+</li>
+<!-- Item 2 -->
+<li class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[11px] shadow-sm">
+<span class="material-symbols-outlined text-[12px]">cloud_done</span>
+</div>
+<div class="w-full bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary font-bold">Initial Documents Uploaded (3 Files)</span>
+<span class="text-caption font-caption text-on-surface-variant">Oct 14, 2025 • 09:48 AM</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+                Postal ID, Hospital Statement, and Oncologist Prescriptions saved to secure repository.
+              </p>
+</div>
+</li>
+<!-- Item 3 (Current) -->
+<li class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center text-[11px] font-bold shadow-sm animate-pulse">
+              !
+            </div>
+<div class="w-full bg-tertiary-fixed/20 p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-tertiary-container font-bold">Awaiting Remaining 2 Requirements</span>
+<span class="text-caption font-caption text-tertiary font-semibold">Current Step</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+                Please upload the Indigency Certificate and Medical Certificate to allow assigned CIU Social Worker review.
+              </p>
+</div>
+</li>
+</ol>
+</section>
+</div>
+<!-- Right Column: Notifications & Institutional Advisories (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Notifications Card -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">notifications_active</span>
+<h3 class="text-title-md font-title-md text-primary">Recent Notifications</h3>
+</div>
+<span class="text-caption font-caption text-secondary font-bold hover:underline cursor-pointer">Mark all read</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Notification 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold text-error">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Requirement Reminder
+              </span>
+<span class="text-caption font-caption text-on-surface-variant">2 hours ago</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface font-semibold">2 missing documents pending for Case AICS-2025-NCR-04821</p>
+<p class="text-caption font-caption text-on-surface-variant mt-0.5">Kindly complete uploads within 5 calendar days to avoid scheduling delays.</p>
+</div>
+<!-- Notification 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> System Notice
+              </span>
+<span class="text-caption font-caption text-on-surface-variant">Oct 14, 2025</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface font-semibold">Application AICS-2025-NCR-04821 Registered</p>
+<p class="text-caption font-caption text-on-surface-variant mt-0.5">Your case is assigned to DSWD Field Office NCR Crisis Intervention Unit.</p>
+</div>
+<!-- Notification 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Compliance
+              </span>
+<span class="text-caption font-caption text-on-surface-variant">Oct 14, 2025</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface font-semibold">Data Privacy Notice & Consent Logged</p>
+<p class="text-caption font-caption text-on-surface-variant mt-0.5">Consent recorded under RA 10173 for medical assistance processing.</p>
+</div>
+</div>
+<a class="w-full mt-space-md py-2 bg-surface-container-high hover:bg-surface-container text-primary text-label-sm font-label-sm rounded-lg flex items-center justify-center gap-1 transition-colors" data-path="notifications" href="notifications.html">
+<span>View All 3 Notifications</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</section>
+<!-- Official Anti-Fixer Public Advisory -->
+<section class="bg-primary text-on-primary rounded-xl shadow-md p-space-lg relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[160px]">shield</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-primary-container font-bold text-label-sm font-label-sm uppercase mb-2">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Official Public Advisory | Babala</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-primary font-bold">Ang Tulong ng DSWD ay LIBRE (100% Free of Charge)</h3>
+<p class="text-body-sm font-body-sm text-on-primary/90 mt-2">
+          DSWD AICS does <strong>NOT</strong> charge fees for forms, appointments, processing, or cash grant disbursements. Do not entertain unauthorized fixers or online middlemen soliciting cuts or processing fees.
+        </p>
+<div class="mt-space-md pt-space-sm bg-on-primary/10 rounded-lg p-space-sm flex flex-col gap-1">
+<span class="text-caption font-caption text-on-primary-container uppercase font-bold">Report Unauthorized Fixers / Sumbong:</span>
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="text-label-md font-label-md font-mono text-on-primary font-bold">Hotline 8888 / DSWD CIU (02) 8951-8110</span>
+<span class="text-caption font-caption bg-error text-on-error px-2 py-0.5 rounded font-bold">Zero Tolerance</span>
+</div>
+</div>
+</section>
+<!-- Assigned DSWD Center Quick Info -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-primary font-bold">Your Servicing Field Office</h4>
+<span class="text-caption font-caption text-on-surface-variant">NCR Crisis Intervention Unit (CIU)</span>
+</div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          389 San Rafael St. cor. Legarda St., Sampaloc, Manila (Near Mendiola / Gastambide).
+        </p>
+<div class="mt-space-sm flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Operating Hours: Mon - Fri, 8:00 AM - 5:00 PM</span>
+<span class="text-secondary font-bold">Open Today</span>
+</div>
+</section>
+</div>
+</div>
+<!-- AICS Crisis Assistance Spectrum (Visual Grid based on official insignia) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">diversity_1</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider font-bold">AICS Crisis Assistance Programs</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Department of Social Welfare and Development Assistance Spectrum</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          In accordance with DSWD Memorandum Circular No. 15, AICS serves individuals and families experiencing acute crisis across six key domains:
+        </p>
+</div>
+<a class="shrink-0 inline-flex items-center gap-1 text-label-md font-label-md text-secondary font-bold hover:underline" data-path="apply-for-assistance" href="apply.html">
+<span>View Full Citizen's Charter</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- 6 Assistance Categories Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- 1. Medical Assistance (Active) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-secondary/10 rounded-bl-full flex items-start justify-end p-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[24px]">medical_services</span>
+</div>
+<div class="flex items-center gap-2">
+<h4 class="text-title-md font-title-md text-primary font-bold">Medical Assistance</h4>
+<span class="px-2 py-0.2 rounded-full bg-secondary text-on-secondary text-[10px] font-bold">CURRENT</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+            Hospitalization expenses, chemotherapy protocols, dialysis, post-operation medicines, and assistive physical therapy devices.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-caption font-caption text-primary font-semibold">
+<span>Max grant assessed per case</span>
+<span class="font-mono">Ref: AICS-2025-NCR-04821</span>
+</div>
+</div>
+<!-- 2. Burial Assistance -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-primary flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[24px]">church</span>
+</div>
+<h4 class="text-title-md font-title-md text-primary font-bold">Burial Assistance</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+            Casket costs, embalming, cremation services, transport of human remains (transfer to home province), and funeral logistics.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Requires Death Cert & Contract</span>
+<a class="text-secondary font-bold hover:underline" data-path="apply-for-assistance" href="apply.html">Apply</a>
+</div>
+</div>
+<!-- 3. Fire & Calamity Support -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="w-10 h-10 rounded-lg bg-error text-on-error flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<h4 class="text-title-md font-title-md text-primary font-bold">Fire & Calamity Aid</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+            Immediate emergency relief, building materials assistance, and financial support for disaster or fire-razed households.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>BFP Incident Report needed</span>
+<a class="text-secondary font-bold hover:underline" data-path="apply-for-assistance" href="apply.html">Apply</a>
+</div>
+</div>
+<!-- 4. Educational Assistance -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<h4 class="text-title-md font-title-md text-primary font-bold">Educational Support</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+            Stipends for vocational, high-school, and tertiary students belonging to indigent households facing sudden breadwinner loss.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Certificate of Enrollment</span>
+<a class="text-secondary font-bold hover:underline" data-path="apply-for-assistance" href="apply.html">Apply</a>
+</div>
+</div>
+<!-- 5. Transportation Assistance -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[24px]">directions_bus</span>
+</div>
+<h4 class="text-title-md font-title-md text-primary font-bold">Transportation Aid</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+            Travel fare for stranded individuals, victims of illegal recruitment, or emergency return to home province (Balik Probinsya).
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Police blotter / Stranded ID</span>
+<a class="text-secondary font-bold hover:underline" data-path="apply-for-assistance" href="apply.html">Apply</a>
+</div>
+</div>
+<!-- 6. Food & Essential Subsistence -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[24px]">lunch_dining</span>
+</div>
+<h4 class="text-title-md font-title-md text-primary font-bold">Food & Subsistence</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+            Immediate emergency family food packs and monetary allocation for basic nutritional survival during acute hardship.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Immediate assessment</span>
+<a class="text-secondary font-bold hover:underline" data-path="apply-for-assistance" href="apply.html">Apply</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Data Privacy Assurance Strip -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">enhanced_encryption</span>
+<div>
+<p class="text-label-md font-label-md text-primary font-bold">DSWD Protected Digital Vault</p>
+<p class="text-caption font-caption">Your uploaded identity documents and medical summaries are encrypted end-to-end under RA 10173.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm shrink-0">
+<a class="text-secondary hover:underline" href="#">Data Privacy Terms</a>
+<span class="text-outline">•</span>
+<a class="text-secondary hover:underline" href="#">CIU Citizen Desk</a>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl text-on-surface-variant"><div class="w-full px-gutter flex flex-col md:flex-row justify-between items-start gap-space-lg"><div class="max-w-xl"><div class="flex items-center gap-space-xs mb-space-xs"><span class="text-label-md font-label-md text-primary font-bold">Department of Social Welfare and Development</span><span class="text-caption font-caption text-on-surface-variant">| Bagong Pilipinas</span></div><p class="text-caption font-caption mb-space-sm">DSWD Central Office: Batasan Pambansa Complex, Constitution Hills, Quezon City, Philippines 1126. AICS Online Crisis Intervention and Social Safety Net Portal.</p><p class="text-caption font-caption text-outline">Republic Act No. 10173 (Data Privacy Act of 2012) compliant. Official transactions are free of charge. Report unauthorized fixers immediately to hotline 16545.</p></div><div class="flex flex-col gap-space-xs text-caption font-caption"><span class="text-label-sm font-label-sm text-primary font-bold uppercase">Citizen Resources</span><a class="hover:text-primary transition-colors" href="#">Citizen's Charter 2025</a><a class="hover:text-primary transition-colors" href="#">Accessibility Statement & WCAG AA Compliance</a><a class="hover:text-primary transition-colors" href="#">Terms of Service & Privacy Notice</a><span class="text-outline mt-space-xs">© 2025 Republic of the Philippines. All rights reserved.</span></div></div></footer></div></body></html>
